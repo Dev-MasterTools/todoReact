@@ -8,7 +8,7 @@ router.get("/", async (req,res) => {
     try{
         res.json({
             status:200,
-            message: "Data collected sucessfully",
+            message: "Data collected sucesnnnnsfully",
         });
     }
     catch(error)
