@@ -1,4 +1,9 @@
 const express = require("express");
+
+//product
+const product = require("/api/product");
+
+
 const app = express();
 
 const path = require("path");
@@ -13,6 +18,8 @@ app.use(cors());
 app.get("/api/test", (req, res) => {
   res.send("test");
 });
+
+app.use("/api/products", product)
 
 app.use(express.static(path.join(__dirname, "./frontend/build")));
 
